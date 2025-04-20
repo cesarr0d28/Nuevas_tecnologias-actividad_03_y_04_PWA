@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Fútbol en Orden - Inicio</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Fútbol en Orden - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadatos PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#004d7a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
 </head>
 <body>
   <header>
-    <h1>Fútbol en Orden</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="pages/campeonatos.html">Campeonatos</a></li>
-        <li><a href="pages/reservas.html">Reservas</a></li>
-        <li><a href="pages/galeria.html">Galería</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo Fútbol en Orden" class="header-logo" href="index.html">
+      <h1>Fútbol en Orden</h1>
+      <button class="menu-icon" id="menu-icon" aria-label="Abrir menú">&#9776;</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/campeonatos.html">Campeonatos</a></li>
+          <li><a href="pages/reservas.html">Reservas</a></li>
+          <li><a href="pages/galeria.html">Galería</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido</h2>
-      <p>Gestiona campeonatos y reserva canchas fácilmente con nuestro sistema.</p>
+    <section class="intro">
+      <h2>Bienvenido a Fútbol en Orden</h2>
+      <p>Somos tu plataforma confiable para organizar campeonatos, reservar canchas y llevar un control completo del fútbol local.</p>
+    </section>
+  
+    <section class="servicios">
+      <h2>¿Qué puedes hacer aquí?</h2>
+      <ul>
+        <li><strong>Registrar campeonatos:</strong> Crea torneos, asigna fechas y lleva control de resultados.</li>
+        <li><strong>Reservar canchas:</strong> Consulta disponibilidad y agenda en tiempo real.</li>
+        <li><strong>Gestionar equipos:</strong> Controla inscripciones, jugadores y estadísticas.</li>
+        <li><strong>Ver galería:</strong> Disfruta de fotos y momentos destacados de los eventos deportivos.</li>
+      </ul>
+    </section>
+  
+    <section class="beneficios">
+      <h2>¿Por qué usar Fútbol en Orden?</h2>
+      <p>Nuestra plataforma está diseñada para facilitar la organización deportiva a nivel local, permitiéndote ahorrar tiempo, mejorar la comunicación entre equipos y tener todo bajo control desde tu celular o computadora.</p>
+    </section>
+  
+    <section class="cta" style="text-align: center; margin-top: 30px;">
+      <h2>¡Empieza ahora!</h2>
+      <a href="pages/campeonatos.html"><button>Ver Campeonatos</button></a>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Fútbol en Orden</p>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>

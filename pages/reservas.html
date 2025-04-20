@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas - Fútbol en Orden</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <img src="../images/logo.png" alt="Logo Fútbol en Orden" class="header-logo">
+        <h1>Reserva de Canchas</h1>
+        <button class="menu-icon" id="menu-icon" aria-label="Abrir menú">&#9776;</button>
+        <nav id="menu">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de Reserva</h2>
+      <form id="formReserva">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+  
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required><br>
+  
+        <label for="hora">Hora:</label>
+        <select id="hora" required>
+          <option value="">Seleccione una hora</option>
+          <option>08:00 AM</option>
+          <option>09:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>12:00 PM</option>
+          <option>01:00 PM</option>
+          <option>02:00 PM</option>
+          <option>03:00 PM</option>
+          <option>04:00 PM</option>
+          <option>05:00 PM</option>
+          <option>06:00 PM</option>
+          <option>07:00 PM</option>
+          <option>08:00 PM</option>
+          <option>09:00 PM</option>
+          <option>10:00 PM</option>
+        </select><br>
+  
+        <label for="cancha">Cancha:</label>
+        <select id="cancha" required>
+          <option value="">Seleccione una cancha</option>
+          <option>Cancha 1</option>
+          <option>Cancha 2</option>
+        </select><br>
+  
+        <button type="submit">Reservar</button>
+        <button type="button" id="btnVerReservas">Ver Reservas</button>
+      </form>
+  
+      <!-- Contenedor de reservas, inicialmente oculto -->
+      <section id="reservas" style="display: none;">
+        <h3>Reservas Realizadas</h3>
+        <table id="tablaReservas">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Cancha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se insertarán las filas -->
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Fútbol en Orden</p>
+  </footer>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
